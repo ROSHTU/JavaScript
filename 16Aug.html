@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <p>Before the script...</p>
+
+    <script>
+      // how to print
+
+      alert("Hello, world!");
+      alert("hello");
+      alert("World");
+      console.log("World"); // we can also use  but in this there is no interaction with the user
+
+      //   // single line
+
+      //
+      /*
+   
+   Multi 
+    line
+    comments 
+    
+   "use strict"
+    
+ */
+
+      //   // // creating and naming varibles
+      //   // $ and _ allowed
+
+      let message = "hello";
+      let Age = 26;
+
+      let a = "world",
+        b = 2;
+      var x = 16; // by using var we canuse it anywhere in the file
+
+      alert(message);
+      alert(Age);
+      alert(a);
+      alert(b);
+
+      alert(NaN + 1);
+      alert(3 * NaN);
+      alert("not a number" / 2 - 1);
+      alert(Infinity); // Infinity
+      alert(1 / 0); // Infinity
+
+      // "" alert , prompt , confirm ""
+
+      // prompt takes 2 values 1st to take input fromuser iother is pre
+      // filled default value
+
+      let age = prompt("How old are you?", 100);
+      alert(`You are ${age} years old!`);
+
+      // The function confirm shows a modal window with a
+      // question and two buttons: OK and Cancel.
+
+      let isINTERN = confirm("Are you the intern ?");
+      alert(isINTERN);
+
+      // DATA TYPES AND CONVERSIONS
+
+      let str = "123";
+      alert(typeof str); // string
+      let num = Number(str); // becomes a number 123
+      alert(typeof num); // number
+
+      let value = true;
+      alert(typeof value);
+
+      // OPERATORS
+      // Addition +,
+      // Subtraction -,
+      // Multiplication *,
+      // Division /,
+      // Remainder %,
+      // Exponentiation **
+      let n = 2;
+      n *= 3 + 5; // solved right to left
+      alert(n); // 16
+      // increment ++
+      // decrement --
+      let counter = 1;
+      alert(2 * ++counter); // 4
+      let ctr = 1;
+      alert(2 * ctr++); // 2, because counter++ returns the "old" value
+
+      // AND ( & )
+      // OR ( | )
+      // XOR ( ^ )
+      // NOT ( ~ )
+      // LEFT SHIFT ( << )
+      // RIGHT SHIFT ( >> )
+      // ZERO-FILL RIGHT SHIFT ( >>> )
+
+
+      // strict equality check ===
+      // non strict equality check ==
+      
+    </script>
+
+    <p>...After the script.</p>
+  </body>
+</html>
