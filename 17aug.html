@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <p>Before the script...</p>
+
+    <script>
+
+        // if else and else if statement
+        // CODE TO GIVE MESSAGE AS PER AGE ENTERED
+        let age = prompt("age?",8);
+        if (age <= 10) {
+          message = "Hi, baby!";
+        } else if (age <= 21) {
+          message = "HI Student!";
+        } else if (age <= 30) {
+          message = "Good morning sir!";
+        } else {
+          message = "Sorry no message for you";
+        }alert(message);
+
+
+        let result;
+
+        if (a + b < 4) {
+          result = "Below";
+        } else {
+          result = "Over";
+        }
+      //   converting if to ?
+        let res = a + b < 4 ? "Below" : "Over";
+
+        // LOGICAL OPERATORS
+
+        let isSunny = confirm("Is it sunny outside?");
+        let temperature = parseFloat(
+          prompt("What's the current temperature in Celsius?")
+        );
+        let hasRaincoat = confirm("Do you have a raincoat?");
+
+        if (isSunny && temperature > 25) {
+          console.log("It's a hot and sunny day!");
+        } else if (!isSunny || temperature < 20) {
+          console.log("The weather is not ideal.");
+        } else if (!hasRaincoat) {
+          console.log("You might get wet if it rains.");
+        } else {
+          console.log("The weather seems fine.");
+        }
+
+        // Nullish coalescing operator '??'
+      //   if a??b if a is defined it gives value of else it goes to b
+        let userInput = null;
+        let defaultValue = "Default Value";
+        let x = userInput ?? defaultValue;
+        console.log(x);
+
+        // FOR AND WHILE LOOP
+
+        console.log("Even numbers using a for loop:");
+        for (let i = 2; i <= 10; i += 2) {
+          console.log(i);
+        }
+
+        let number = 5;
+        let factorial = 1;
+        let counter = 1;
+
+        while (counter <= number) {
+          factorial *= counter;
+          counter++;
+        }
+
+        console.log("Factorial of " + number + " is: " + factorial);
+
+        //   DAY OF WEEK USING SWITCH STATEMENTS
+
+        let dayOfWeek = 3; // For example, Wednesday
+
+        switch (dayOfWeek) {
+          case 1:
+            console.log("It's Monday.");
+            break;
+          case 2:
+            console.log("It's Tuesday.");
+            break;
+          case 3:
+            console.log("It's Wednesday.");
+            break;
+          case 4:
+            console.log("It's Thursday.");
+            break;
+          case 5:
+            console.log("It's Friday.");
+            break;
+          case 6:
+            console.log("It's Saturday.");
+            break;
+          case 7:
+            console.log("It's Sunday.");
+            break;
+          default:
+            console.log("Invalid day.");
+        }
+
+        // BASIC GREET FUNCTION
+        let Age = prompt("What is your age?", 18);
+
+        let welcome =
+          Age < 18
+            ? function () {
+                alert("Hello!");
+              }
+            : function () {
+                alert("Greetings!");
+              };
+
+        welcome();
+
+        // FUNCTION FOR PALINDROME
+        function isPalindrome(str) {
+          // Remove non-alphanumeric characters and convert to lowercase
+          const cleanStr = str.toLowerCase().replace(/[^a-z0-9]/g, "");
+
+          // Check if the cleaned string is the same forwards and backwards
+          return cleanStr === cleanStr.split("").reverse().join("");
+        }
+
+        // Test cases
+        const input1 = "racecar";
+        const input2 = "hello";
+        console.log("'" + input1 + "' is a palindrome: " + isPalindrome(input1));
+        console.log("'" + input2 + "' is a palindrome: " + isPalindrome(input2));
+
+      //   NESTED FUNCTIONS
+      function outerFunction(x) {
+        function innerFunction(y) {
+          return y * 2;
+        }
+
+        return innerFunction(x) + 5;
+      }
+
+      let Result = outerFunction(3);
+      console.log(Result); 
+
+    //  ARROW FUNCTIONS
+
+    </script>
+
+    <p>...After the script.</p>
+  </body>
+</html>
